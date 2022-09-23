@@ -42,7 +42,7 @@ public class SearchInHrmLogin  {
 		obj.search("Charlie.Carter","Charlie Carter",driver);	
 		
 		driver.findElement(By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--ghost']")).click(); //CLICKING ON CLEAR BUTTON
-		WebElement ele=driver.findElement(By.xpath("//form//div[@class='oxd-select-text oxd-select-text--active']"));
+		WebElement ele=driver.findElement(By.xpath("//form//div[@class='oxd-select-text-input']"));
 		Select n=new Select(ele);
 		obj.search(n, driver);
 
@@ -68,7 +68,7 @@ public class SearchInHrmLogin  {
 	 void search(Select n,WebDriver d) throws InterruptedException {
 			
 			// WebDriver driver = new ChromeDriver();
-			n.selectByValue("ESS");
+			n.selectByIndex(2);
 			d.findElement(By.xpath("//button[@type='submit']")).click();
 
 
