@@ -45,7 +45,6 @@ public class SearchInHrmLogin  {
 		WebElement ele=driver.findElement(By.xpath("//form//div[@class='oxd-select-text-input']"));
 		Select n=new Select(ele);
 		obj.search(n, driver);
-
 	}
 
 	 void search(String username,WebDriver d) throws InterruptedException {

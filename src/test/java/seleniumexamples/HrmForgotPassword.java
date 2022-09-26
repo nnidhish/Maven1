@@ -3,7 +3,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.testng.asserts.SoftAssert;
 public class HrmForgotPassword  {
 	
 	
@@ -33,6 +33,7 @@ public class HrmForgotPassword  {
 		
 		
 		Assert.assertEquals(inii,sm,"OrangeHRM");
+		SoftAssert softAssert=new SoftAssert();
 		System.out.print("After Assertion");
 		
 
